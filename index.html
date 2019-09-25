@@ -2,9 +2,9 @@
 <html>
     <script src='strCmp.js'></script>
     <script>
-    console.assert(strCompare('Abcde', 'Abcde').dif == 0, 'Error')
+    console.assert(strCompare('Abcdefghij', 'Abcde').dif == 0, 'Error')
     console.assert(strCompare('Abcde', 'AAbcde').dif == 1, 'Error')
     console.assert(strCompare('Abcde', 'Acde').dif == 1, 'Error')
-    console.assert(strCompare('Abcde', 'AAbcd').dif == 2, 'Error')
+    console.assert(strCompare('Abcde', 'AAbcd').dif == 1, 'Error')
 </script>
 </html>
