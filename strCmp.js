@@ -9,6 +9,9 @@ function strCompare(str1, str2) {
             if (str1[c] == str2[c + off]) {
 
             }
+            else if( ! str2[c + off]){
+                dif++
+            }
             else if (str1[c].match(/\s$/) && str2[c].match(/\s/)) {
 
             }
